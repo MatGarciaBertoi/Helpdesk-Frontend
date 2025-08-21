@@ -75,6 +75,4 @@ Este projeto é a base para muitas outras funcionalidades, incluindo:
 * Refatorar a estilização com um framework como Tailwind CSS.
 * Escrever testes automatizados com Jest e React Testing Library.
 
----
 
-_Projeto desenvolvido com a orientação da IA Gemini._
