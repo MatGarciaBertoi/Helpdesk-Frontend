@@ -9,7 +9,7 @@ Este é o repositório do frontend para a aplicação **ResolveDesk**, um sistem
 
 Este projeto foi desenvolvido como um estudo de caso completo de uma aplicação Full Stack, cobrindo desde a autenticação de usuários até a interação em tempo real com os chamados.
 
-## 🚀 Funcionalidades Principais
+##  Funcionalidades Principais
 
 * **Autenticação Segura:** Tela de login que se comunica com o backend para autenticar usuários.
 * **Gerenciamento de Estado:** Utiliza React Context API para manter o estado de autenticação persistente em toda a aplicação.
@@ -22,7 +22,7 @@ Este projeto foi desenvolvido como um estudo de caso completo de uma aplicação
     * Atribuição de um ticket a um técnico.
 * **Segurança por Perfil:** A interface se adapta e permite ações com base no perfil do usuário logado (Cliente, Técnico, Administrador), consumindo as regras de negócio da API.
 
-## ✨ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 Este projeto foi construído utilizando as seguintes tecnologias:
 
@@ -32,7 +32,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 * **Axios:** Cliente HTTP para realizar as chamadas para a API backend.
 * **CSS Puro:** Para a estilização dos componentes, seguindo uma abordagem modular.
 
-## 🛠️ Como Executar o Projeto Localmente
+##  Como Executar o Projeto Localmente
 
 Siga os passos abaixo para rodar o frontend na sua máquina.
 
@@ -66,7 +66,7 @@ Siga os passos abaixo para rodar o frontend na sua máquina.
 
 5.  **Abra o navegador:** A aplicação estará disponível em `http://localhost:5173`.
 
-## 🔮 Próximos Passos e Melhorias Futuras
+##  Próximos Passos e Melhorias Futuras
 
 Este projeto é a base para muitas outras funcionalidades, incluindo:
 * Implementar a interface para o usuário com perfil `CLIENTE`.
