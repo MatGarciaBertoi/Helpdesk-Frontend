@@ -66,12 +66,7 @@ Siga os passos abaixo para rodar o frontend na sua máquina.
 
 5.  **Abra o navegador:** A aplicação estará disponível em `http://localhost:5173`.
 
-##  Próximos Passos e Melhorias Futuras
 
-Este projeto é a base para muitas outras funcionalidades, incluindo:
-* Implementar a interface para o usuário com perfil `CLIENTE`.
-* Adicionar notificações em tempo real (Toast Notifications).
-* Implementar paginação na lista de tickets.
 * Refatorar a estilização com um framework como Tailwind CSS.
 * Escrever testes automatizados com Jest e React Testing Library.
 
