@@ -3,8 +3,9 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './pages/LoginPage.jsx';
 import DashboardPage from './pages/DashboardPage.jsx';
 import TicketDetailPage from './pages/TicketDetailPage.jsx';
+import ClientDashboardPage from './pages/ClientDashboardPage.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
-import Layout from './components/Layout.jsx'; // Extensão .jsx adicionada
+import Layout from './components/Layout.jsx';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -24,6 +25,16 @@ function App() {
             <ProtectedRoute>
               <Layout>
                 <DashboardPage />
+              </Layout>
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/client-dashboard" 
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <ClientDashboardPage />
               </Layout>
             </ProtectedRoute>
           } 

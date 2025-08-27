@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import LoginForm from '../components/LoginForm';
+import LoginForm from '../components/LoginForm.jsx';
 import { toast } from 'react-toastify';
 
 function LoginPage() {
@@ -9,12 +9,16 @@ function LoginPage() {
   const { login } = useAuth();
 
   const handleLogin = async (email, password) => {
-    const success = await login(email, password); 
-    if (success) {
-      toast.success('Login realizado com sucesso!'); // Notificação de sucesso
-      navigate('/dashboard');
+    const userData = await login(email, password);
+
+    if (userData) {
+      toast.success('Login realizado com sucesso!');
+      if (userData.perfil === 'CLIENTE') {
+        navigate('/client-dashboard');
+      } else {
+        navigate('/dashboard');
+      }
     } else {
-      // Substituímos o alert() por uma notificação de erro
       toast.error('Falha no login. Verifique suas credenciais.');
     }
   };
